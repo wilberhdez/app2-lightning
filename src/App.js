@@ -7,6 +7,7 @@ export default class App extends ux.App {
 
     static _template() {
         return {
+            Text: {text: {text: "hello world"}}
         };
     }
 

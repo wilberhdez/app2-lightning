@@ -2,10 +2,14 @@
   "author": "Metrological, Bas van Meurs <b.van.meurs@metrological.com>",
   "name": "Lightning-SDK-blueprint",
   "dependencies": {
+    "canvas": "^2.5.0",
+    "node-gyp": "^4.0.0",
+    "rebuild": "^0.1.2",
     "wpe-lightning-sdk": "https://github.com/WebPlatformForEmbedded/Lightning-SDK.git"
   },
   "scripts": {
     "release-web": "node ./node_modules/wpe-lightning-sdk/scripts/release-web.js",
-    "release-mpkg": "node ./node_modules/wpe-lightning-sdk/scripts/release-mpkg.js"
+    "release-mpkg": "node ./node_modules/wpe-lightning-sdk/scripts/release-mpkg.js",
+    "upload-app": "node ./node_modules/wpe-lightning-sdk/scripts/upload-app-metrological.js"
   }
 }
